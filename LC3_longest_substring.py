@@ -24,6 +24,9 @@ def longestSubstring(s:str)->str:
         max_len = max(max_len, r-l+1)
     
     return max_len    
+
+# gonna solve with hash map in future
+
         
     
 print(longestSubstring("pwwkew"))

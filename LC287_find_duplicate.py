@@ -25,6 +25,6 @@ def find_duplicate(arr):
 
 arr = [3, 1, 2, 4, 2]
 print(find_duplicate(arr))
-# print("function call done ✅")
+
 
 
