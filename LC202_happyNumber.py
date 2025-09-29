@@ -12,8 +12,8 @@ class solution(object):
         fast = self.squareSum(n)
         
         while slow != fast and fast !=  1:
-            slow = self.squareSum(slow)
-            fast = self.squareSum(self.squareSum(fast))
+            slow = self.squareSum(slow)  # slow moves by 1
+            fast = self.squareSum(self.squareSum(fast)) # fast moves by 2
         
         return fast == 1
 
