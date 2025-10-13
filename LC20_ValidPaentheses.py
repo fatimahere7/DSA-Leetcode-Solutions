@@ -31,10 +31,10 @@ def isValid(s: str) -> bool:
 
 
 
-print(isValid("()"))        
-print(isValid('()[]{}'))    
-print(isValid("(]"))        
-print(isValid("([)]"))      
-print(isValid("{[]}"))
+print(isValid("()"))         #True
+print(isValid('()[]{}'))     #True
+print(isValid("(]"))         #False
+print(isValid("([)]"))       #False
+print(isValid("{[]}"))       
 
                 
