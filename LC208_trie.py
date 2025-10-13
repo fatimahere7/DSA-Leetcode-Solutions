@@ -17,7 +17,10 @@ class Trie:
                 node.children[char] = TrieNode()
             node = node.children[char]
         node.is_end = True
-
+    
+    def insert_many(self, words: list[str])->None:
+        for word in words:
+           self.insert(word) 
     def search(self, word: str) -> bool:
         node = self.root
         for char in word:
@@ -38,13 +41,12 @@ class Trie:
 
 
 trie = Trie()
-trie.insert("apple")
-trie.insert("app")
-trie.insert("bat")
+trie = Trie()
+trie.insert_many(["apple", "banana", "bat"])
 print(trie.startwith("appl"))
 print(trie.startwith('aapl'))
 print(trie.search("apple"))    # True
-print(trie.search("appl"))     # False
+print(trie.search("banana"))     # False
 
 print(trie.search("bat"))      # True
 print(trie.search("bad"))      # False
